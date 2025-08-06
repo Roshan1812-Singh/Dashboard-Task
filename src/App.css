@@ -1,16 +1,9 @@
+body{
+  background: linear-gradient(100deg,#2A2A2A, #D4D4D4, #B3B3B3, #2B2B2B);
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: aquamarine;
 }
 
 .App-header {
@@ -24,15 +17,5 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* 100deg, */
+ /* */
