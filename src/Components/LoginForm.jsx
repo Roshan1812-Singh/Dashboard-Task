@@ -1,5 +1,5 @@
 import { Box, Button, Link, TextField, Typography } from "@mui/material"
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
@@ -23,7 +23,7 @@ const LoginForm = () => {
         <form>
             <Box sx={{
                 textAlign: "center", fontFamily: "Times New Roman",
-                background: "linear-gradient(100deg, #000011, #D1D0D0, #988686, #5C4E4E)",
+                background: "linear-gradient(100deg, #000011, #D1D0D0, #b4b4b4ff, #5C4E4E)",
                 m: "auto", mt: 12, ml: 12, p: 2, width: 300,
                 justifyContent: "center", alignItems: "center", boxShadow: 2, gap: 3, borderRadius: 10
             }}
@@ -33,14 +33,12 @@ const LoginForm = () => {
                     label="E-mail"
                     type="email"
                     required
-                    // onChange={handleChange}
                     onChange={(e) => setEmail(e.target.value)}
                     sx={{ m: 1, borderRadius: 5 }}
                 />
                 <TextField
                     label="Password"
                     type="password"
-                    // onChange={handleChange}
                     onChange={(e) => setPassword(e.target.value)}
                     sx={{ m: 1, borderRadius: 5 }}
                     required />
@@ -54,7 +52,7 @@ const LoginForm = () => {
                     Login
                 </Button>
                 <Typography sx={{ m: 1 }}>
-                    <b>Don't have an account ? </b><br /> <Link href='/create' sx={{ m: 1 }}>Create Account</Link>
+                    <b>Don't have an account ? </b><br /> <Link href='/create' sx={{ m: 1 }}><b>Create Account</b></Link>
                 </Typography>
             </Box>
         </form>

@@ -27,15 +27,15 @@ const CreateAccount = () => {
     return (
         <form>
             <Box sx={{
-                background: "linear-gradient(100deg, #000011, #D1D0D0, #988686, #5C4E4E)",
+                background: "linear-gradient(100deg, #000011, #D1D0D0, #b4b4b4ff, #5C4E4E)",
                 textAlign: "center", fontFamily: "Times New Roman", backgroundColor: "aliceblue",
                 m: "auto", mt: 10, p: 2, width: 300,
                 justifyContent: "center", alignItems: "center", boxShadow: 2, borderRadius: 10
             }}
                 onChange={handleChange}
             >
-                <Typography variant="h5" sx={{ m: 1 }} >
-                    Create Account
+                <Typography variant="h4" sx={{ m: 1 }} >
+                    <b>Create Account</b>
                 </Typography>
                 <TextField label="Username" sx={{ m: 1 }} onChange={(e) => setUsername(e.target.value)}/>
                 <TextField label="E-mail" sx={{ m: 1 }} onChange={(e) => setEmail(e.target.value)}/>
@@ -49,7 +49,7 @@ const CreateAccount = () => {
                 disabled={!isFormValid}
                 > Create</Button>
                 <Typography sx={{ m: 1 }}>
-                    <b>Already have an account ? </b><br /> <Link href='/' sx={{ m: 1 }}>Login</Link>
+                    <b>Already have an account ? </b><br /> <Link href='/' sx={{ m: 1 }}><b>Login</b></Link>
                 </Typography>
             </Box>
         </form>

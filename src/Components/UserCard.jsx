@@ -3,8 +3,9 @@ import Img from './user.jpg'
  
 const UserCard = () => {
   return (
-    <Card sx={{ mt: 8, width: 300, height: "auto", 
-      background: "linear-gradient(100deg, #B3EBF2, #85D1DB, #B6F2D1, #C9FDF2)",
+    <Card sx={{ mt: 8, width: 350, height: "auto", 
+      background: "linear-gradient(100deg, #424a4bff, #3e5153ff, #356c6cff, #737977ff)",
+      color: "white"
     }}>
       <CardContent>
         <Avatar src={Img} sx={{ width: 80, height: 80, mb: 2}} />

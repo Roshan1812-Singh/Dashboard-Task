@@ -1,5 +1,6 @@
 body{
-  background: linear-gradient(100deg,#2A2A2A, #D4D4D4, #B3B3B3, #2B2B2B);
+  background: linear-gradient(100deg,#353434, #4d5260, #707b7f, #91a6aa);
+  z-index: 1;
 }
 .App {
   text-align: center;

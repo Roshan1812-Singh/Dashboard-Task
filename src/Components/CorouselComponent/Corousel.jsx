@@ -23,7 +23,7 @@ const Corousel = () => {
   }, []);
  
   return (
-    <Box sx={{ width: '100%', height: '100%', overflow: 'hidden', zIndex: -0.5}}>
+    <Box sx={{ width: '100%', height: '100%', overflow: 'hidden', zIndex: 1.1}}>
       <img
         src={images[index]}
         alt="carousel"
